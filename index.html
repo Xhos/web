@@ -3,10 +3,27 @@
   <head>
     <title>Xhos's portfolio</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
   <body>
-    <div class="center"> 
-      <h1 id="logo" >Xhos</h1>
-    </div>
+    <svg width="330" height="97" viewBox="0 0 330 97" fill="none" xmlns="http://www.w3.org/2000/svg" id="logo">
+      <path d="M44.856 34.352L29.368 3.37601H2.616L28.088 48.816L2.616 94H29.368L44.856 63.152L60.728 94H87.352L62.008 48.816L87.352 3.37601H60.728L44.856 34.352Z" stroke="white" stroke-width="3"/>
+      <path d="M117.208 59.824H143.32V94H166.36V3.37601H143.32V37.68H117.208V3.37601H94.168V94H117.208V59.824Z" stroke="white" stroke-width="3"/>
+      <path d="M178.492 64.176C178.492 84.912 197.308 95.28 216.124 95.28C234.94 95.28 253.628 84.912 253.628 64.176V33.2C253.628 12.464 234.812 2.09601 215.996 2.09601C197.18 2.09601 178.492 12.336 178.492 33.2V64.176ZM201.404 33.2C201.404 26.544 208.572 22.96 215.74 22.96C223.164 22.96 230.716 26.16 230.716 33.2V64.176C230.716 70.704 223.42 74.032 216.124 74.032C208.828 74.032 201.404 70.832 201.404 64.176V33.2Z" stroke="white" stroke-width="3"/>
+      <path d="M261.441 78.896C269.889 89.776 281.409 95.28 292.289 95.28C308.929 95.28 327.361 85.68 328.129 68.144C329.153 45.872 313.025 40.24 296.897 37.296C289.857 35.76 285.121 33.2 284.865 28.848C285.249 18.352 301.505 17.968 310.977 28.08L325.953 16.56C316.609 5.16801 305.985 2.09601 294.977 2.09601C278.337 2.09601 262.209 11.44 262.209 29.232C262.209 46.512 275.521 55.728 290.113 58.032C297.537 59.056 305.857 62 305.601 67.12C304.961 76.848 284.993 76.336 275.905 65.328L261.441 78.896Z" stroke="white" stroke-width="3"/>
+      </svg>
+      
+      
+    <script>
+      anime({
+        targets: '#logo path',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutSine',
+        duration: 1500,
+        delay: function(el, i) { return i * 250 },
+        direction: 'alternate',
+        loop: true
+      });
+    </script>
   </body>
 </html>
